@@ -1,0 +1,46 @@
+{
+  "name": "swagger-generate-demo",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "start": "node -r dotenv/config --loader ts-node/esm --experimental-specifier-resolution=node ./src",
+    "generate": "node -r dotenv/config --loader ts-node/esm --experimental-specifier-resolution=node src/generate.ts",
+    "lint": "eslint src",
+    "prepare": "husky install",
+    "test": "vitest run --coverage"
+  },
+  "author": {
+    "name": "Tam Dao",
+    "email": "daotam4536@gmail.com",
+    "url": "https://github.com/tamdao"
+  },
+  "engines": {
+    "node": ">=18.0"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.11.5",
+    "@types/numeral": "^2.0.5",
+    "@types/papaparse": "^5.3.14",
+    "@vitest/coverage-v8": "^1.2.1",
+    "eslint": "^8.56.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0",
+    "prettier": "^3.2.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.1"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.19.1",
+    "@typescript-eslint/parser": "^6.19.1",
+    "dayjs": "^1.11.10",
+    "dotenv": "^16.4.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "numeral": "^2.0.6",
+    "papaparse": "^5.4.1",
+    "swagger-to-typescript-interface": "^1.0.2"
+  }
+}
